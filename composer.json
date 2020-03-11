@@ -1,0 +1,26 @@
+{
+    "name": "dyg0924/api-scaffold",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "w",
+            "email": "dyg0924@sina.cn"
+        }
+    ],
+    "require": {
+        "laravel/framework": "^7.0",
+        "tymon/jwt-auth": "1.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dyg0924\\ApiScaffold\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dyg0924\\ApiScaffold\\ApiServiceProvider"
+            ]
+        }
+    }
+}
