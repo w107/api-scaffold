@@ -31,7 +31,7 @@ trait EnumTrait
 
     protected static function getStaticProperties($name)
     {
-        $reflect = new \ReflectionClass(new self());
+        $reflect = new \ReflectionClass(new static());
         return $reflect->getStaticProperties()[$name];
     }
 
