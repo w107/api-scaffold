@@ -122,6 +122,10 @@ trait ApiResponse
      */
     public function success($data, $status = "success")
     {
+        //兼容ResourceCollection
+        if ($data instanceof \Illuminate\Http\Resources\Json\AnonymousResourceCollection) {
+            $data = $data->response()->getData();
+        }
         return $this->status($status, compact('data'));
     }
 
