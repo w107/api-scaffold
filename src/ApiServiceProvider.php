@@ -1,6 +1,6 @@
 <?php
 
-namespace Dyg0924\ApiScaffold;
+namespace Inn20\ApiScaffold;
 
 use Illuminate\Support\ServiceProvider;
 

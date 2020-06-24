@@ -1,6 +1,6 @@
 <?php
 
-namespace Dyg0924\ApiScaffold\Http\Middleware;
+namespace Inn20\ApiScaffold\Http\Middleware;
 
 use Illuminate\Support\Facades\Auth;
 use Closure;

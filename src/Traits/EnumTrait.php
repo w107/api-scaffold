@@ -1,6 +1,6 @@
 <?php
 
-namespace Dyg0924\ApiScaffold\Traits;
+namespace Inn20\ApiScaffold\Traits;
 
 trait EnumTrait
 {

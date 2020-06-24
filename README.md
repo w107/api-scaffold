@@ -4,7 +4,7 @@
 # 安装
 
 ```
-composer require "dyg0924/api-scaffold"
+composer require "inn20/api-scaffold"
 ```
 
 #### 创建配置文件&生成JWT key
@@ -17,7 +17,7 @@ php artisan api-scaffold:install
 > 创建脚手架配置文件
 
 ```
-php artisan vendor:publish --provider="Dyg0924\ApiScaffold\ApiServiceProvider"
+php artisan vendor:publish --provider="Inn20\ApiScaffold\ApiServiceProvider"
 ```
 > 创建JWT配置文件
 
@@ -46,7 +46,7 @@ $app->singleton(
 ```
 $app->singleton(
     Illuminate\Contracts\Debug\ExceptionHandler::class,
-    Dyg0924\ApiScaffold\Exceptions\ApiHandler::class
+    Inn20\ApiScaffold\Exceptions\ApiHandler::class
 );
 ```
 
@@ -71,7 +71,7 @@ $app->singleton(
 
 ```
 ...
-use Dyg0924\ApiScaffold\Models\User as JwtUser;
+use Inn20\ApiScaffold\Models\User as JwtUser;
 
 class User extends JwtUser
 ...
@@ -104,7 +104,7 @@ $user = Auth::guard('api')->user();
 > 用户认证,token过期会自动刷新
 
 #### 统一 Response 响应
-###### 控制器引入trait `Dyg0924\ApiScaffold\Helpers\ApiResponse`
+###### 控制器引入trait `Inn20\ApiScaffold\Helpers\ApiResponse`
 
 
 #### 异常接管

@@ -1,6 +1,6 @@
 <?php
 
-namespace Dyg0924\ApiScaffold\Exceptions;
+namespace Inn20\ApiScaffold\Exceptions;
 
 use Illuminate\Foundation\Exceptions\Handler;
 use Throwable;

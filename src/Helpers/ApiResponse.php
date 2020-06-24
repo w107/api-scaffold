@@ -1,6 +1,6 @@
 <?php
 
-namespace Dyg0924\ApiScaffold\Helpers;
+namespace Inn20\ApiScaffold\Helpers;
 
 use Symfony\Component\HttpFoundation\Response as FoundationResponse;
 use Response;

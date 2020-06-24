@@ -1,6 +1,6 @@
 <?php
 
-namespace Dyg0924\ApiScaffold\Models;
+namespace Inn20\ApiScaffold\Models;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Tymon\JWTAuth\Contracts\JWTSubject;

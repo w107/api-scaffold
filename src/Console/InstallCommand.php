@@ -1,6 +1,6 @@
 <?php
 
-namespace Dyg0924\ApiScaffold\Console;
+namespace Inn20\ApiScaffold\Console;
 
 use Illuminate\Console\Command;
 

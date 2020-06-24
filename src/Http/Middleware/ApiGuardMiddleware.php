@@ -1,6 +1,6 @@
 <?php
 
-namespace Dyg0924\ApiScaffold\Http\Middleware;
+namespace Inn20\ApiScaffold\Http\Middleware;
 
 use Closure;
 

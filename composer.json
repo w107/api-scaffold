@@ -1,9 +1,9 @@
 {
-    "name": "dyg0924/api-scaffold",
+    "name": "inn20/api-scaffold",
     "minimum-stability": "dev",
     "authors": [
         {
-            "name": "w",
+            "name": "inn",
             "email": "dyg0924@sina.cn"
         }
     ],
@@ -19,7 +19,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Dyg0924\\ApiScaffold\\ApiServiceProvider"
+                "Inn20\\ApiScaffold\\ApiServiceProvider"
             ]
         }
     }
