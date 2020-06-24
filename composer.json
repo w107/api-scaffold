@@ -13,7 +13,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Dyg0924\\ApiScaffold\\": "src/"
+            "Inn20\\ApiScaffold\\": "src/"
         }
     },
     "extra": {
