@@ -120,7 +120,7 @@ trait ApiResponse
      * @param string $status
      * @return mixed
      */
-    public function success($data, $status = "success")
+    public function success($data = '', $status = "success")
     {
         //兼容ResourceCollection
         if ($data instanceof \Illuminate\Http\Resources\Json\AnonymousResourceCollection) {
