@@ -34,20 +34,13 @@ php artisan jwt:secret
 
 1. 修改异常处理器
 
-> `bootstrap/app.php ` 文件中
+> `App\Exceptions\Handler ` 继承 `Inn20\ApiScaffold\Exceptions\ApiHandler`
 
 ```
-$app->singleton(
-    Illuminate\Contracts\Debug\ExceptionHandler::class,
-    App\Exceptions\Handler::class
-);
-```
-> 改成
-```
-$app->singleton(
-    Illuminate\Contracts\Debug\ExceptionHandler::class,
-    Inn20\ApiScaffold\Exceptions\ApiHandler::class
-);
+use Inn20\ApiScaffold\Exceptions\ApiHandler as ExceptionHandler;
+
+class Handler extends ExceptionHandler
+...
 ```
 
 2. 配置 Auth guard
