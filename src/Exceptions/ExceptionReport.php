@@ -2,7 +2,7 @@
 
 namespace Inn20\ApiScaffold\Exceptions;
 
-use Dyg0924\ApiScaffold\Helpers\ApiResponse;
+use Inn20\ApiScaffold\Helpers\ApiResponse;
 use Throwable;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;

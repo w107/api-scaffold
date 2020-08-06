@@ -38,7 +38,7 @@ class InstallCommand extends Command
     public function handle()
     {
         $this->call('vendor:publish', [
-            '--provider' => \Dyg0924\ApiScaffold\ApiServiceProvider::class
+            '--provider' => \Inn20\ApiScaffold\ApiServiceProvider::class
         ]);
         $this->call('vendor:publish', [
             '--provider' => \Tymon\JWTAuth\Providers\LaravelServiceProvider::class
