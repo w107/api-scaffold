@@ -11,7 +11,7 @@ class InstallCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'api-scaffold:install';
+    protected $signature = 'api-scaffold:install {--force}';
 
     /**
      * The console command description.
@@ -37,13 +37,20 @@ class InstallCommand extends Command
      */
     public function handle()
     {
-        $this->call('vendor:publish', [
-            '--provider' => \Inn20\ApiScaffold\ApiServiceProvider::class
-        ]);
-        $this->call('vendor:publish', [
-            '--provider' => \Tymon\JWTAuth\Providers\LaravelServiceProvider::class
-        ]);
+        $force = $this->option('force');
+
+        $this->publishByProvider(\Inn20\ApiScaffold\ApiServiceProvider::class, $force);
+        $this->publishByProvider(\Tymon\JWTAuth\Providers\LaravelServiceProvider::class, $force);
         $this->call('jwt:secret');
+    }
+
+    protected function publishByProvider($provider, $force)
+    {
+        $options = ['--provider' => $provider];
+        if ($force == true) {
+            $options['--force'] = true;
+        }
+        $this->call('vendor:publish', $options);
     }
 
 }
