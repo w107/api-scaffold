@@ -19,7 +19,7 @@ return [
         \Tymon\JWTAuth\Exceptions\TokenInvalidException::class => ['token不正确', 400],
         \Symfony\Component\HttpKernel\Exception\NotFoundHttpException::class => ['没有找到该页面', 404],
         \Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException::class => ['访问方式不正确', 405],
-        \Illuminate\Database\QueryException::class => ['参数错误', 401],
+        \Illuminate\Database\QueryException::class => ['数据库异常', 402],
     ]
 
 ];
